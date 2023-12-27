@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { getSoftSkills } from "../controllers/softSkills/softSkilsController";
+import { getSoftSkills } from "../../controllers/softSkills/softSkilsController";
 
 
 export async function GET () {

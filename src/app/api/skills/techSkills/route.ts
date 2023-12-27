@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { getTechSkills } from "../controllers/techSkills/techSkillsController";
+import { getTechSkills } from "../../controllers/techSkills/techSkillsController";
 
 export async function GET () {
 

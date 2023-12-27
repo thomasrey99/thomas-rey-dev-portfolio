@@ -21,5 +21,6 @@ export const getCertifications=async ()=>{
     } catch (error) {
         
         return {message:"An error occurred when loading the certificates from firebase"}
+        
     }
 }
