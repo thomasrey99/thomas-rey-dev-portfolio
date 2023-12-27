@@ -1,0 +1,8 @@
+.layout{
+    display: grid;
+    grid-template-columns: calc(100vw - var(--scrollbar-width));
+    grid-template-rows: 15vh minmax(75vh, auto) 20vh;
+    grid-template-areas: "navbar"
+                         "content"
+                         "footer";
+}
