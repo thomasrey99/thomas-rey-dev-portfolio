@@ -1,0 +1,7 @@
+.navbarCont{
+    position: sticky;
+    grid-area: navbar;
+    background: var(--dark-background);
+    top:0;
+    z-index: 2;
+}

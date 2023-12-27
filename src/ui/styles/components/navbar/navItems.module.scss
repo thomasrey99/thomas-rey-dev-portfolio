@@ -1,0 +1,30 @@
+.ul{
+
+    height: 100%;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    .item{
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+            color: white;
+        .span{
+            color: red;
+        }
+        &::after{
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0; 
+            width: 0;
+            height: 1px; 
+            background-color: white;
+            transition: width 0.3s ease-out; 
+        }
+        &:hover::after {
+            width: 100%; 
+        }
+    }
+}

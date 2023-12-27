@@ -1,0 +1,16 @@
+.progressBarContainer {
+    position: fixed;
+    top: calc(var(--navbar-height) - 3px);
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: transparent;
+    position: absolute;
+  }
+  
+.progressBar {
+    height: 100%;
+    background: aqua;
+    transition: width 0s ease-in-out;
+}
+  

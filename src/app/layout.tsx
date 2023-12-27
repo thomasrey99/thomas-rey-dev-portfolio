@@ -1,8 +1,10 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Nunito } from 'next/font/google'
 import '@/ui/styles/base/globals.scss'
+import Navbar from '@/ui/components/navbar/Navbar'
+import Footer from '@/ui/components/footer/Footer'
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Nunito({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Thomas rey Fs Dev',
@@ -17,7 +19,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} layout`}>
+        <Navbar/>
         {children}
+        <Footer/>
       </body>
     </html>
   )
