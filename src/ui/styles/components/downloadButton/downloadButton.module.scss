@@ -1,0 +1,17 @@
+.buttonCont{
+    width: auto;
+    height: auto;
+    margin-top: 20px;
+    .downloadButton{
+        padding: 10px 20px;
+        border: 1px groove var(--dark-background);
+        background: var(--dark-background);
+        color: white;
+        border-radius: 20px;
+        cursor: pointer;
+        &:hover{
+            background: var(--dark-background);
+            color: white;
+        }
+    }
+}

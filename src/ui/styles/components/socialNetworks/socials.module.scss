@@ -1,0 +1,31 @@
+.socialsCont{
+    width: 350px;
+    height: 60px;
+    background: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    .iconCont{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 1px groove var(--dark-background);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        .socialIcon{
+            width: 20px;
+            height: 20px;
+            color: var(--dark-background);
+        }
+        &:hover{
+            background: var(--dark-background);
+            box-shadow: 1px 1px 10px var(--dark-background);
+            .socialIcon{
+                color: white;
+            }
+        }
+    }
+}
