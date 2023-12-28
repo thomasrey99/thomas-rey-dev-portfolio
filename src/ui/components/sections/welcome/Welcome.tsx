@@ -1,9 +1,10 @@
 import React from 'react'
 import style from "@/ui/styles/components/sections/welcome/welcome.module.scss"
 import Image from 'next/image'
-import perfil from '@/assets/Captura desde 2023-12-22 20-30-26.png'
+
 import Social from '../../socialNetworks/Social'
 import DownloadButton from '../../downloadButton/DownloadButton'
+import AboutMeButton from '../../aboutMebutton/AboutMeButton'
 const Welcome = () => {
   return (
     <section className={style.welcome}>
@@ -18,6 +19,7 @@ const Welcome = () => {
             </div>
             <Social/>
             <DownloadButton/>
+            <AboutMeButton/>
         </div>
         
     </section>

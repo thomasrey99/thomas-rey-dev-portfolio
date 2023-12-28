@@ -1,10 +1,10 @@
 import type { Metadata } from 'next'
-import { Nunito } from 'next/font/google'
+import { Poppins } from 'next/font/google'
 import '@/ui/styles/base/globals.scss'
 import Navbar from '@/ui/components/navbar/Navbar'
 import Footer from '@/ui/components/footer/Footer'
 
-const inter = Nunito({ subsets: ['latin'] })
+const poppins = Poppins({ weight: "400", subsets:["latin"] })
 
 export const metadata: Metadata = {
   title: 'Thomas rey Fs Dev',
@@ -18,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} layout`}>
+      <body className={`${poppins.className} layout`}>
         <Navbar/>
         {children}
         <Footer/>
