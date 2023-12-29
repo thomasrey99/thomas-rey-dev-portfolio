@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Poppins } from 'next/font/google'
 import '@/ui/styles/base/globals.scss'
+import { Providers } from '@/libs/redux/provider/Provider'
 import Navbar from '@/ui/components/navbar/Navbar'
 import Footer from '@/ui/components/footer/Footer'
 
@@ -17,12 +18,14 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={`${poppins.className} layout`}>
-        <Navbar/>
-        {children}
-        <Footer/>
-      </body>
-    </html>
+    <Providers>
+      <html lang="en">
+        <body className={`${poppins.className} layout`}>
+          <Navbar/>
+          {children}
+          <Footer/>
+        </body>
+      </html>
+    </Providers>
   )
 }
