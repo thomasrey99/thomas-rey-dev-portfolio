@@ -2,4 +2,21 @@
     grid-area: navbar;
     background: var(--dark-background);
     z-index: 2;
+    display: grid;
+    position: sticky;
+    top: 0;
+    grid-template-columns: 15vw 85vw;
+    grid-template-rows: 95% 5%;
+    grid-template-areas: "logo items"
+                         "progressBar progressBar";
+    .logoCont{
+        grid-area: logo;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .logo{
+            width: 90%;
+            height: 90%;
+        }
+    }
 }

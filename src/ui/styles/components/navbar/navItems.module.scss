@@ -5,13 +5,14 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    grid-area: items;
     .item{
             position: relative;
             display: inline-block;
             cursor: pointer;
             color: white;
         .span{
-            color: red;
+            color: var(--pink);
         }
         &::after{
             content: '';

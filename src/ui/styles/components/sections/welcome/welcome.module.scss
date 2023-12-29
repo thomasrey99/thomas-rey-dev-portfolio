@@ -55,7 +55,7 @@
                               -1px 1px 0 var(--dark-background),
             }
             .wave{
-                color: white;
+                color: var(--pink);
                 animation: wave 3s ease-in-out infinite;
             }
             @media (max-width:480px){

@@ -14,14 +14,15 @@
         align-items: center;
         justify-content: center;
         cursor: pointer;
+        color: white;
         .socialIcon{
             width: 20px;
             height: 20px;
-            color: var(--dark-background);
         }
         &:hover{
-            background: var(--dark-background);
-            box-shadow: 1px 1px 10px var(--dark-background);
+            background: var(--pink);
+            box-shadow: 1px 1px 5px var(--dark-background);
+            color: white;
             .socialIcon{
                 color: white;
             }
