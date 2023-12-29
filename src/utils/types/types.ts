@@ -5,3 +5,11 @@ export interface techSkill {
     type:string,
     yearExperience:number,
 }
+export interface softSkills {
+    name:string,
+    type:string
+}
+export interface stateSkills{
+    softSkills:Array<softSkills>,
+    techSkills:Array<techSkill>
+}

@@ -7,7 +7,8 @@ const nextConfig = {
         storageBucket: "thomas-rey-portfolio.appspot.com",
         messagingSenderId: "750053887986",
         appId: "1:750053887986:web:40599e142c0ebe9d49e56b",
-        measurementId: "G-DK8287LL09"
+        measurementId: "G-DK8287LL09",
+        base_url:"http://localhost:3000/"
     }
 }
 
