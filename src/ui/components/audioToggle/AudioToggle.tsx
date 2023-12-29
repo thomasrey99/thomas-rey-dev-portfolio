@@ -20,7 +20,12 @@ const AudioToggle = () => {
       }
     }
   };
-  
+  const handleAudioEnded = () => {
+    if (audioRef.current) {
+      audioRef.current.play();
+    }
+  };
+
   return (
     <div className='toggleCont'>
       <input type="checkbox" id="checkboxInput" checked={!checked}/>
@@ -55,7 +60,7 @@ const AudioToggle = () => {
           </svg>
         </div>
       </label>
-      <audio ref={audioRef} src="/audio/midnigth-city.mp3" />
+      <audio ref={audioRef} src="/audio/midnigth-city.mp3" onEnded={handleAudioEnded}/>
     </div>
   );
 };
