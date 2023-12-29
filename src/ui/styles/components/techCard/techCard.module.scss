@@ -1,13 +1,14 @@
 .cardCont{
     width: 200px;
     height: 250px;
+    padding: 10px;
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 50% 50%;
     grid-template-areas: "image"
                          "info";
 
-    background: var(--dark-background);
+
     cursor: pointer;
     transition: all 1seg;
     overflow: hidden;
@@ -19,6 +20,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        background: var(--dark-background);
     }
     .infoCont{
         grid-area: info;
@@ -35,3 +37,35 @@
         }
     }
 }
+
+.skill {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 90%;
+  }
+  
+  .skillName {
+    width: 120px;
+    font-size: 16px;
+  }
+  
+  .skillLevel {
+    width: 160px;
+    height: 10px;
+    background-color: #eee;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-left: 20px;
+  }
+  
+  .skillPercent {
+    background-color: var(--pink);
+    height: 100%;
+  }
+  
+  .skillPercentNumber {
+    margin-left: 20px;
+    font-size: 16px;
+    color: var(--dark-background);
+  }

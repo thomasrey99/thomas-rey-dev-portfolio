@@ -20,7 +20,12 @@ const TechCard = ({name, image, level, yearExperience}:techSkill) => {
         <div className={style.infoCont}>
             <h3 className={style.name}>{name}</h3>
             <p>{yearExperience} {yearExperience>1?"years":"year"}</p>
-            <p><span className={style.xp}>Xp</span>: {level}%</p>
+            <div className={style.skill}>
+                <div className={style.skillLevel}>
+                    <div className={style.skillPercent} style={{width:`${level}%`}}></div>
+                </div>
+                <div className={style.skillPercentNumber}>{level}%</div>
+            </div>
         </div>
     </div>
   )

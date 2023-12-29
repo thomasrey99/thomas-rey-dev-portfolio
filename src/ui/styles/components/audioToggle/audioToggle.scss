@@ -85,3 +85,6 @@
     transform: scale(0.7);
   }
   
+  #checkboxInput:hover + .toggleSwitch {
+    background-color: var(--pink);
+  }
