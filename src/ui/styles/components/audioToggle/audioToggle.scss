@@ -1,16 +1,13 @@
 .toggleCont{
-    width: 100px;
-    height: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    position: absolute;
-    top: 20px;
-    right: 20px;
+    position: sticky;
+    top: 13vh;
+    right: 96vw;
     z-index: 1;
     border-radius: 20px;
-
 }
 /* The switch - the box around the speaker*/
 .toggleSwitch {
