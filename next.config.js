@@ -9,7 +9,10 @@ const nextConfig = {
         appId: "1:750053887986:web:40599e142c0ebe9d49e56b",
         measurementId: "G-DK8287LL09",
         base_url:"http://localhost:3000/"
-    }
+    },
+    images: {
+        domains: ['firebasestorage.googleapis.com'],
+    },
 }
 
 module.exports = nextConfig

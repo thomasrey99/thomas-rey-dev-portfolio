@@ -4,7 +4,6 @@ import { createSlice } from "@reduxjs/toolkit";
 let initialState={
     techSkills:[],
     softSkills:[],
-    Loading:false
 }
 
 export const skillSlice=createSlice({
@@ -25,14 +24,7 @@ export const skillSlice=createSlice({
             }
 
         },
-        setIsLoading:(state, {payload})=>{
-
-            if(payload){
-                state.Loading=payload
-            }
-
-        }
     }
 })
 
-export const { setTechSkills, setSoftSkills, setIsLoading }=skillSlice.actions
+export const { setTechSkills, setSoftSkills }=skillSlice.actions

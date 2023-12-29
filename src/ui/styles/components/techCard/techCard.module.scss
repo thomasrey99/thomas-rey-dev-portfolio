@@ -1,0 +1,37 @@
+.cardCont{
+    width: 200px;
+    height: 250px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "image"
+                         "info";
+
+    background: var(--dark-background);
+    cursor: pointer;
+    transition: all 1seg;
+    overflow: hidden;
+    &:hover{
+        transform: scale(1.1) !important;
+    }
+    .imgCont{
+        grid-area: image;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .infoCont{
+        grid-area: info;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1.5px groove var(--dark-background);
+        justify-content: space-evenly;
+        color: var(--dark-background);
+        background: white;
+        .xp{
+            color: var(--pink);
+            text-shadow: 0 0 10px var(--pink);
+        }
+    }
+}
