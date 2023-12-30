@@ -24,7 +24,7 @@ const TechCard = ({name, image, level, yearExperience}:techSkill) => {
                 <div className={style.skillLevel}>
                     <div className={style.skillPercent} style={{width:`${level}%`}}></div>
                 </div>
-                <div className={style.skillPercentNumber}>{level}%</div>
+                <div className={style.skillPercentNumber}><span className={style.xp}>{level}%</span></div>
             </div>
         </div>
     </div>

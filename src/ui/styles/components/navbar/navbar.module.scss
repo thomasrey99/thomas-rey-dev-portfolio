@@ -19,4 +19,20 @@
             height: 90%;
         }
     }
+    @media (max-width:480px){
+        grid-template-columns: 85vw 15vw;
+        grid-template-rows: 95% 5%;
+        grid-template-areas: "logo items"
+                            "progressBar progressBar";
+        .logoCont{
+            grid-area: logo;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            .logo{
+                width: 50%;
+                height: 70%;
+            }
+        }
+    }
 }
