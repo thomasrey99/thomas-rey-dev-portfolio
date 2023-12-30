@@ -1,7 +1,5 @@
 import React from 'react'
 import style from "@/ui/styles/components/sections/welcome/welcome.module.scss"
-import Image from 'next/image'
-
 import Social from '../../socialNetworks/Social'
 import DownloadButton from '../../downloadButton/DownloadButton'
 import AboutMeButton from '../../aboutMebutton/AboutMeButton'

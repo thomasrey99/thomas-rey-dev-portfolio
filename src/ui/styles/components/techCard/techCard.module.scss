@@ -1,17 +1,13 @@
 .cardCont{
-    width: 200px;
-    height: 250px;
-    padding: 10px;
+    border: none;
+    width: 350px;
+    height: 150px;
     display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 50% 50%;
-    grid-template-areas: "image"
-                         "info";
-
-
+    grid-template-columns: 150px 200px;
+    grid-template-rows: 150px;
+    grid-template-areas: "image info";
     cursor: pointer;
     transition: all 1seg;
-    overflow: hidden;
     &:hover{
         transform: scale(1.1) !important;
     }
@@ -20,17 +16,18 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background: var(--dark-background);
+        background: #dedede;
+        
     }
     .infoCont{
         grid-area: info;
         display: flex;
         flex-direction: column;
         align-items: center;
-        border: 1.5px groove var(--dark-background);
         justify-content: space-evenly;
         color: var(--dark-background);
         background: white;
+        border: 1px solid #dedede;
         .xp{
             color: var(--pink);
             text-shadow: 0 0 10px var(--pink);
