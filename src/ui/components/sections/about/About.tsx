@@ -1,18 +1,21 @@
-import style from "@/ui/styles/components/sections/about/about.module.scss"
-import perfil from '@/assets/Captura desde 2023-12-22 20-30-26.png'
-import Image from "next/image"
-import profile from "@/assets/profile.png"
+import style from "@/ui/styles/components/sections/about/about.module.scss";
+import Image from "next/image";
+import pro from "@/assets/pro.png";
 
 export const About = () => {
   return (
     <section className={style.mainAbout} id="About">
-        <h2 className={style.sectionTitle}><span className={style.index}>01</span> About me</h2>
-        <Image src={profile} alt="thomas rey" width={300} height={300}/>
+      <h2 className={style.sectionTitle}>
+        <span className={style.index}>01</span> About me
+      </h2>
+      <div className={style.aboutSection}>
+        <Image src={pro} alt="programmer" width={250} height={250} className={style.img} />
         <div className={style.aboutTextCont}>
-            <p className={style.paragraph}>
-                Hi, my name is Thomas Rey, I&apos;m a passionate Full Stack Web Developer with expertise in JavaScript and TypeScript, focusing on creating dynamic web experiences. I specialize in front-end frameworks like React.js, Vite.js, and Next.js, leveraging tools like Redux Toolkit for efficient development. Proficient in CSS preprocessors (Sass, Less) and styling frameworks (Bootstrap, Tailwind), I craft intuitive interfaces. In the back-end, I excel in SQL database management (PostgreSQL, Sequelize) and building robust systems with Node.js and Express. I&apos;ve actively contributed to academic projects, notably a food e-commerce project turned real, enhancing teamwork, leadership, and quick tech adaptation skills. I&apos;m decisive, curious, and thrive on learning new technologies. Seeking challenging projects that demand creativity, innovation, and technical excellence. Let&apos;s create something amazing together!
-            </p>
+          <p className={style.paragraph}>
+            Hi! I&apos;m Thomas Rey, a Full Stack Web Developer specialized in JavaScript and TypeScript. I&apos;m in charge of creating dynamic web experiences, using React.js, Vite.js, and Next.js on the front-end, and Node.js and Express on the back-end. I manage SQL databases such as PostgreSQL and Sequelize, in addition to working with tools such as Redux Toolkit, Sass, Less, Bootstrap, and Tailwind for intuitive interfaces. I have led academic projects, including one that became a real business, which has developed my skills in teamwork, leadership, and rapid adaptation to technology. I am determined, curious, and always ready to learn new technologies. I look for challenging projects that require creativity, innovation, and technical excellence. I&apos;m excited to create something amazing with you!
+          </p>
         </div>
+      </div>
     </section>
-  )
-}
+  );
+};

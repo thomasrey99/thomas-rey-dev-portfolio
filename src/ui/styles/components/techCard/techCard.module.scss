@@ -11,6 +11,7 @@
     &:hover{
         transform: scale(1.1) !important;
     }
+    
     .imgCont{
         grid-area: image;
         display: flex;
@@ -32,6 +33,11 @@
             color: var(--pink);
             text-shadow: 0 0 10px var(--pink);
         }
+    }
+    @media (max-width:480px){
+      &:hover{
+        transform: scale(1.0);
+      }
     }
 }
 
@@ -60,7 +66,6 @@
     background-color: var(--pink);
     height: 100%;
   }
-  
   .skillPercentNumber {
     margin-left: 20px;
     font-size: 16px;
