@@ -13,6 +13,8 @@ export const NavItems = ({navItems}:any) => {
                 )
             })
         }
+        {/*<li  onClick={()=>scrollToSection("Contact")} className={style.button}>Contact</li>
+        <li className={style.button}>Blog</li>*/}
     </ul>
   )
 }

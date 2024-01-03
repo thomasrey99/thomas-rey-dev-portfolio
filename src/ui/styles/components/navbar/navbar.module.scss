@@ -19,7 +19,7 @@
             height: 90%;
         }
     }
-    @media (max-width:480px){
+    @media (max-width:768px){
         grid-template-columns: 85vw 15vw;
         grid-template-rows: 95% 5%;
         grid-template-areas: "logo items"

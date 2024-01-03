@@ -11,8 +11,8 @@ export default function Home() {
       <AudioToggle/>
       <Welcome/>
       <About/>
-      <Skills/>
       <Projects/>
+      <Skills/>
     </main>
   )
 }

@@ -1,0 +1,9 @@
+.menuCont{
+    position: absolute;
+    height: calc(100vh - var(--navbar-height));
+    width: 100vw;
+    position: absolute;
+    background: rgba($color: #121212, $alpha: 1);
+    top: var(--navbar-height);
+    z-index: 3;
+}

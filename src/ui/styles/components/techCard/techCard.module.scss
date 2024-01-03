@@ -34,11 +34,6 @@
             text-shadow: 0 0 10px var(--pink);
         }
     }
-    @media (max-width:480px){
-      &:hover{
-        transform: scale(1.0);
-      }
-    }
 }
 
 .skill {
