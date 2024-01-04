@@ -31,9 +31,9 @@
             text-shadow: 0 0 10px var(--pink);
         }
     }
-    @media (max-width:480px){
-      &:hover{
-        overflow-x: hidden;
+    @media (max-width:768px) {
+      &:hover {
+        transform: none !important;
       }
     }
 }
