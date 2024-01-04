@@ -5,14 +5,17 @@
         color: var(--pink);
     }
 }
-.mainProjects{
-    min-height: 88vh;
+
+.mainExperience{
     width: 100vw;
+    min-height: 88vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    gap: 20px;
+    margin-top: 10vh;
     .sectionTitle{
-        @include sectionTitle;
+        @include sectionTitle
     }
 }

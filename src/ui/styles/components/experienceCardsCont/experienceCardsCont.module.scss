@@ -1,11 +1,8 @@
 .cardsCont{
-    min-height: 80%;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
-    gap: 20px;
-    padding: 20px;
     width: 100vw;
+    min-height: 80vh;
 }

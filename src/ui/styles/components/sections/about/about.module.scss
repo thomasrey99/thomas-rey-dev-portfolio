@@ -1,6 +1,6 @@
 @mixin sectionTitle{
     font-size: 3rem;
-    color: var(--dark-background);
+    color: white;
     .index{
         color: var(--pink);
     }
@@ -15,13 +15,14 @@
     align-items: center;
     justify-content: space-around;
     gap: 20px;
+    color: white;
     .aboutSection{
         display: flex;
         align-items:center;
         justify-content: space-evenly;
         width: 80%;
         min-height: 60vh;
-        @media (max-width:480px){
+        @media (max-width:768px){
             flex-direction: column;
             gap: 40px;
         }
@@ -29,7 +30,13 @@
             width: 60%;
             padding: 20px;
             text-align: left;
-            @media (max-width:480px){
+            .paragraph{
+                .span{
+                    color: var(--pink);
+                    text-shadow: 0 0 2px var(--pink);
+                }
+            }
+            @media (max-width:768px){
                 width: 100%;
                 padding: 0
             }

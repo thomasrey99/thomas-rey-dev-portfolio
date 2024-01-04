@@ -9,15 +9,21 @@
         width: 40px;
         height: 40px;
         border-radius: 50%;
-        border: 1px groove var(--dark-background);
+        border: 1px groove white;
         display: flex;
         align-items: center;
         justify-content: center;
         cursor: pointer;
-        color: var(--dark-background);
-        .socialIcon{
-            width: 20px;
-            height: 20px;
+        color: white;
+        .link{
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .socialIcon{
+                width: 20px;
+                height: 20px;
+            }
         }
         &:hover{
             background: var(--pink);

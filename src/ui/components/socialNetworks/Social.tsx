@@ -3,29 +3,37 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
 import {faSquareTwitter, faSquareInstagram, faLinkedin, faGithub,} from "@fortawesome/free-brands-svg-icons"
 import { faEnvelope} from "@fortawesome/free-solid-svg-icons"
 import style from "@/ui/styles/components/socialNetworks/socials.module.scss"
+import Link from "next/link"
 
 const Social = () => {
+
+  const email="thomas_rey1999@outlook.com"
 
   const socials:Array<Object>=[
     {
         name:"twitter",
-        img:faSquareTwitter
+        img:faSquareTwitter,
+        url:"#"
     },
     {
         name:"instagram",
-        img: faSquareInstagram
+        img: faSquareInstagram,
+        url:"https://www.instagram.com/thomas_leonel_rey"
     },
     {
         name:"Git Hub",
-        img:faGithub
+        img:faGithub,
+        url:"https://github.com/thomasrey99"
     },
     {
         name:"Linkedin",
-        img:faLinkedin
+        img:faLinkedin,
+        url:"https://www.linkedin.com/in/thomas-rey-39099021b"
     },
     {  
         name:"Email",
-        img:faEnvelope
+        img:faEnvelope,
+        url:`mailto:${email}`
     }
   ]
 
@@ -35,7 +43,7 @@ const Social = () => {
             socials?.map((icon:any)=>{
                 return(
                     <div key={icon.name} className={style.iconCont}>
-                        <FontAwesomeIcon icon={icon.img} className={style.socialIcon}/>
+                        <Link href={icon.url} target="blank" className={style.link}><FontAwesomeIcon icon={icon.img} className={style.socialIcon}/></Link>
                     </div>
                 )
             })

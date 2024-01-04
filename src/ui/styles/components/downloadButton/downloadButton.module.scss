@@ -4,14 +4,12 @@
     margin-top: 10px;
     .downloadButton{
         padding: 10px 20px;
-        border: 1px groove var(--dark-background);
-        background: var(--dark-background);
-        color: white;
+        background: white;
+        color: var(--dark-background);
         border-radius: 20px;
         cursor: pointer;
         &:hover{
-            background: var(--dark-background);
-            color: white;
+            box-shadow: 0 0 5px white;
         }
     }
 }

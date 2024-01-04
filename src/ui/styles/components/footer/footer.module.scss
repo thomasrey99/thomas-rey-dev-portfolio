@@ -1,4 +1,24 @@
 .footerCont{
     grid-area: footer;
     background: var(--dark-background);
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 80% 20%;
+    grid-template-areas: "socials"
+                         "copyright";
+    .socialsCont{
+        grid-area: socials;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .copyright{
+        grid-area: copyright;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        padding: 10px;
+        color: var(--pink);
+    }
 }

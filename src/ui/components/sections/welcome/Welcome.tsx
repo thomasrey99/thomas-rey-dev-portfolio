@@ -8,7 +8,7 @@ import profile from "@/assets/profile.png"
 const Welcome = () => {
   return (
     <section className={style.welcome}>
-        <Image src={profile} alt="thomas rey" width={200} height={200} className={style.img}/>
+        <Image src={profile} alt="thomas rey" width={180} height={180} className={style.img}/>
         <div className={style.description}>
             <div className={style.welcomeTextCont}>
                 <p className={style.welcomeText}><span className={style.hi}>Hi</span><span className={style.hand}>👋</span>, my name is Thomas, I am</p>

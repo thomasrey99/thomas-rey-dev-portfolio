@@ -4,6 +4,7 @@ import { About } from '@/ui/components/sections/about/About'
 import Skills from '@/ui/components/sections/mySkills/Skills'
 import AudioToggle from '@/ui/components/audioToggle/AudioToggle'
 import Projects from '@/ui/components/sections/projects/Projects'
+import Experience from '@/ui/components/sections/experience/Experience'
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <About/>
       <Projects/>
       <Skills/>
+      <Experience/>
     </main>
   )
 }

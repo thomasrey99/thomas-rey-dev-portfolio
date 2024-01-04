@@ -1,13 +1,13 @@
 @mixin sectionTitle{
     font-size: 3rem;
-    color: var(--dark-background);
+    color: white;
     .index{
         color: var(--pink);
     }
 }
 .mainSkills{
     width: 100vw;
-    min-height: 100vh;
+    min-height: 88vh;
     display: flex;
     flex-direction: column;
     align-items: center;
