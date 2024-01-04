@@ -36,17 +36,17 @@
     }
     @media (max-width:768px){
         grid-template-columns: 300px;
-        grid-template-rows:180px 30px 30px auto;
+        grid-template-rows:180px auto 30px auto;
         grid-template-areas: "image"
                              "name"
                              "company"
                              "description";
-        gap: 10px;
+        gap: 15px;
         .rol{
-            font-size: 16px;
+            font-size: 1.2rem;
         }
         .company{
-            font-size: 12px;
+            font-size: 1rem;
             font-weight: bold;
             .date{
                 font-size: 10px;
@@ -54,7 +54,7 @@
             }
         }
         .description{
-            font-size: 10px;
+            font-size: 1rem;
         }
     }
 }
